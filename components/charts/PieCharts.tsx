@@ -37,7 +37,7 @@ const chartConfig = {
 
 export function Piechart() {
   return (
-    <Card className="flex flex-col bg-[#1E1E1E] w-80 max-lg:max-w-80">
+    <Card className="flex flex-col bg-[#1E1E1E] w-80 max-sm:max-w-64 border-none">
       <CardHeader className="items-start border-b-2 pb-5">
         <CardTitle className="text-white">Primary Text</CardTitle>
         <CardDescription>

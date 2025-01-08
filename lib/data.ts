@@ -108,3 +108,18 @@ export const newsData = [
       "We incorporate the formation of public partnerships as a core aspect of our operations.",
   },
 ];
+
+export const OurPartnersData = [
+  {
+    img: "/assets/partners/partner1.png",
+  },
+  {
+    img: "/assets/partners/partner2.png",
+  },
+  {
+    img: "/assets/partners/partner3.png",
+  },
+  {
+    img: "/assets/partners/partner4.png",
+  },
+];

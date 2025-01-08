@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import { Button } from "../ui/button";
 
@@ -28,16 +27,38 @@ const MainSection = () => {
           </Button>
         </div>
         <Image
-          className="max-lg:hidden"
+          className="max-lg:hidden pt-4"
           src="/assets/main/header3.png"
           alt="Main Image"
-          width={440}
+          width={460}
           height={150}
+          style={{
+            maskImage:
+              "linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 1) 100%)",
+          }}
         />
       </div>
       <div className="flex flex-col gap-5 max-lg:hidden">
-        <img src={"/assets/main/header.png"} alt="Image" className="w-96" />
-        <img src={"/assets/main/header2.png"} alt="Image" className="w-60" />
+        <div>
+          <Image
+            src={"/assets/main/header.png"}
+            alt="Image"
+            width={380}
+            height={200}
+          />
+        </div>
+        <div>
+          <Image
+            src={"/assets/main/header2.png"}
+            alt="Image"
+            width={230}
+            height={200}
+            style={{
+              maskImage:
+                "linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 1) 100%)",
+            }}
+          />
+        </div>
       </div>
     </main>
   );

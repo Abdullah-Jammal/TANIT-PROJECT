@@ -25,18 +25,18 @@ const chartData = [
 
 const chartConfig = {
   desktop: {
-    label: "Desktop",
+    label: "Product1",
     color: "hsl(var(--chart-1))",
   },
   product1: {
-    label: "Product1",
+    label: "Product2",
     color: "#7D4283",
   },
 } satisfies ChartConfig;
 
 export function Barchart() {
   return (
-    <Card className="w-[700px] max-lg:max-w-80 bg-[#1E1E1E]">
+    <Card className="w-[85%] max-lg:max-w-80 bg-[#1E1E1E] border-none">
       <CardHeader>
         <CardTitle className="flex justify-between items-center">
           <p className="text-white">New Profit</p>
@@ -45,7 +45,7 @@ export function Barchart() {
         <CardDescription className="text-gray-400">2024</CardDescription>
       </CardHeader>
       <CardContent>
-        <ChartContainer config={chartConfig}>
+        <ChartContainer config={chartConfig} className="h-52 w-full">
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
             <XAxis
@@ -59,11 +59,11 @@ export function Barchart() {
               cursor={false}
               content={<ChartTooltipContent hideLabel />}
             />
-            <Bar dataKey="desktop" fill="var(--color-desktop)" radius={8} />
+            <Bar dataKey="desktop" fill="var(--color-desktop)" radius={0} />
           </BarChart>
         </ChartContainer>
       </CardContent>
-      <CardFooter className="items-start gap-6 text-sm">
+      <CardFooter className="items-start gap-6 text-sm flex-wrap">
         <p className="flex items-center gap-2 text-white">
           <span className="w-2 h-2 flex bg-purple-800 rounded-full"></span>{" "}
           Product 1

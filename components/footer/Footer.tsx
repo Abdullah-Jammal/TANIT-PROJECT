@@ -4,9 +4,9 @@ import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-color mt-32 pt-16 pb-20 relative">
+    <footer className="bg-primary-color mt-32 pt-12 pb-16 relative">
       <div className="container">
-        <div className="mb-12">
+        <div className="mb-10">
           <h2 className="font-bold text-[40px] max-md:text-[30px]">
             What are you waiting for?
           </h2>
@@ -15,11 +15,11 @@ const Footer = () => {
             clients in Iraq!
           </p>
         </div>
-        <div className="flex gap-4 items-center mb-24 max-sm:flex-col">
+        <div className="flex gap-4 items-center mb-16 max-sm:flex-col">
           <input
             type="text"
             placeholder="Your email"
-            className="bg-white py-2 px-8 rounded-3xl max-sm:w-full"
+            className="bg-white py-2 px-8 rounded-3xl max-sm:w-full text-gray-700 focus:border-none focus:outline-none"
           />
           <Button className="rounded-3xl h-[40px] max-sm:w-full">
             register now
@@ -27,14 +27,14 @@ const Footer = () => {
         </div>
         <div className="flex justify-between items-start max-lg:flex-col">
           <div>
-            <div className="flex justify-between items-start max-w-[500px] max-lg:flex-col">
+            <div className="flex justify-between items-start max-w-[500px] max-lg:flex-col gap-12">
               <Image
                 src={"/assets/logo.png"}
                 alt="TANIT"
                 width={100}
                 height={50}
               />
-              <div className="flex gap-24 mt-8 mb-12">
+              <div className="flex gap-24 mb-10">
                 <div>
                   <h3 className="mb-3">The company</h3>
                   <ul className="text-gray-300 flex flex-col gap-2 max-sm:text-xs">
@@ -60,7 +60,7 @@ const Footer = () => {
               className="flex rounded-3xl px-0 items-center w-52 gap-2 pl-1 py-1"
               style={{ backgroundColor: "rgba(255, 255, 255, 0.25)" }}
             >
-              <p className="bg-white w-10 h-10 flex items-center justify-center primary-main-color rounded-full">
+              <p className="bg-white w-10 h-9 flex items-center justify-center primary-main-color rounded-full">
                 <Instagram size={22} />
               </p>
               <p className="font-medium">Instagram</p>
@@ -69,7 +69,7 @@ const Footer = () => {
               className="flex rounded-3xl px-0 items-center w-52 gap-2 pl-1 py-1"
               style={{ backgroundColor: "rgba(255, 255, 255, 0.25)" }}
             >
-              <p className="bg-white w-10 h-10 flex items-center justify-center primary-main-color rounded-full">
+              <p className="bg-white w-10 h-9 flex items-center justify-center primary-main-color rounded-full">
                 <Facebook size={22} />
               </p>
               <p className="font-medium">Facebook</p>
@@ -78,7 +78,7 @@ const Footer = () => {
               className="flex rounded-3xl px-0 items-center w-52 gap-2 pl-1 py-1"
               style={{ backgroundColor: "rgba(255, 255, 255, 0.25)" }}
             >
-              <p className="bg-white w-10 h-10 flex items-center justify-center primary-main-color rounded-full">
+              <p className="bg-white w-10 h-9 flex items-center justify-center primary-main-color rounded-full">
                 <Linkedin size={22} />
               </p>
               <p className="font-medium">Linkedin</p>
@@ -86,7 +86,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-5 text-center text-gray-300 max-sm:text-xs max-sm:w-full">
+      <div className="absolute bottom-5 text-center w-full text-gray-400 max-sm:text-xs text-sm max-sm:w-full">
         © 2024 Leader Express Delivery Company. All rights reserved.
       </div>
     </footer>

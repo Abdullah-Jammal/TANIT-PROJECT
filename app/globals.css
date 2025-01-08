@@ -14,6 +14,7 @@ body {
   box-sizing: border-box;
   background-color: var(--landing-color);
   color: #fff;
+  overflow-x: hidden;
 }
 
 @layer base {
@@ -73,23 +74,13 @@ body {
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
 /* Start Colors */
 .bg-primary-color {
   background-color: var(--primary-color);
 }
 
 .primary-text-color {
-  background: linear-gradient(90deg, #E879F9, #C75ED05E 74%);
+  background: linear-gradient(90deg, #e879f9, #c75ed05e 74%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -125,3 +116,23 @@ body {
 }
 
 /* End General Ruls */
+
+/* Start About Section */
+.myAbout {
+  background-image: url(@/public/assets/aboutLine.png);
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* End About Section */
+
+/* Start Footer */
+footer {
+  background-image: url(@/public/assets/footerLine.png);
+  background-position: center bottom -330px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* End Footer */

@@ -21,7 +21,7 @@ const Pricing = () => {
         </p>
       </div>
       <div className="w-[500px] max-md:w-full">
-        <Accordion type="single" collapsible>
+        <Accordion type="single" collapsible value="item-3">
           <AccordionItem value="item-1">
             <AccordionTrigger className="bg-[#1A1A1A] primary-main-color text-2xl px-3">
               Intro

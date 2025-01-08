@@ -4,7 +4,7 @@ const OurCompany = () => {
   return (
     <div className="container mb-12">
       <p className="flex items-center justify-start gap-2 border-b-2 border-gray-500 pb-2 primary-main-color">
-        <span className="w-2 h-2 flex bg-white rounded-full"></span>The
+        <span className="w-2 h-2 flex bg-gray-300 rounded-full"></span>The
         company&apos;s philosophy
       </p>
       <div className="flex justify-between items-center mt-5 max-lg:flex-col max-lg:items-start">
@@ -19,8 +19,8 @@ const OurCompany = () => {
           </p>
         </div>
         <div
-          className="flex flex-col w-72 max-lg:w-96 max-lg:flex-row max-lg:gap-8 max-sm:gap-3 max-lg:text-left 
-        max-lg:flex-wrap"
+          className="flex flex-col w-80 max-lg:w-96 max-lg:flex-row max-lg:gap-8 max-sm:gap-3 max-lg:text-left 
+        max-lg:flex-wrap gap-5"
         >
           {ourCompany.map((data) => (
             <div key={data.title} className="max-lg:w-40 max-lg:mt-4">

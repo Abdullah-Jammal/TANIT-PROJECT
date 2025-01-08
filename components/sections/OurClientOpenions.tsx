@@ -24,9 +24,12 @@ const OurClientOpinions = () => {
   }, [currentIndex]);
 
   return (
-    <div className="bg-primary-color h-[80vh] pt-20">
+    <div className="bg-primary-color h-[80vh] pt-20 max-sm:pt-10">
       <div className="container">
-        <Title title="Our clients opinions" />
+        <Title
+          title="Our clients openions"
+          style="text-center text-[35px] font-medium max-sm:hidden"
+        />
         <div className="mt-20">
           <Carousel className="w-full">
             <CarouselContent>

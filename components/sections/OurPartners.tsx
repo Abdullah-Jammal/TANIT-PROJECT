@@ -4,7 +4,7 @@ import Title from "../shared/Title";
 const OurPartners = () => {
   return (
     <div>
-      <Title title="Our Partners" />
+      <Title title="Our Partners" style="text-center text-3xl font-bold" />
       <MarqueeCarousel />
     </div>
   );

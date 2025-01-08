@@ -4,9 +4,12 @@ import Title from "../shared/Title";
 
 const OurCharts = () => {
   return (
-    <div className="container">
-      <Title title="Our charts" />
-      <div className="flex justify-between items-center mt-20 max-lg:flex-col max-lg:gap-8 gap-12">
+    <div className="container pt-8">
+      <Title
+        title="Our charts"
+        style="text-left text-2xl font-medium max-sm:text-center"
+      />
+      <div className="flex justify-between items-center mt-6 max-lg:flex-col max-lg:gap-8 gap-12">
         <Barchart />
         <Piechart />
       </div>

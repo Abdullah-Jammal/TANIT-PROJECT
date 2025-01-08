@@ -6,8 +6,8 @@ import { newsData } from "@/lib/data";
 const News = () => {
   return (
     <div className="container mt-20 mb-12">
-      <div className="flex justify-between items-center mb-16">
-        <Title title="News" />
+      <div className="flex justify-between items-center mb-14">
+        <Title title="News" style="text-center text-[40px] font-medium" />
         <button className="bg-primary-color p-2 rounded-3xl w-40 max-lg:hidden">
           View all news
         </button>
@@ -17,7 +17,7 @@ const News = () => {
           <Image
             src={"/assets/news/Image (2).png"}
             alt="NEWS"
-            width={500}
+            width={650}
             height={500}
           />
           <Company_Contracts />
@@ -32,15 +32,23 @@ const News = () => {
             technological innovation.
           </p>
         </div>
-        <div className="flex flex-col w-[400px] max-md:w-[90%] gap-4">
+        <div className="flex flex-col w-[400px] max-md:w-[90%] gap-4 ml-4 max-sm:ml-0">
           {newsData.map((data) => (
             <div
               className="flex items-center gap-5 w-72 max-sm:w-full"
               key={data.img}
             >
-              <Image src={data.img} alt="" width={170} height={200} />
+              <Image
+                src={data.img}
+                alt=""
+                width={198}
+                height={200}
+                className="max-sm:w-32"
+              />
               <div>
-                <p className="font-bold max-sm:text-sm">{data.title}</p>
+                <p className="font-medium text-[20px] max-sm:text-sm">
+                  {data.title}
+                </p>
                 <Company_Contracts />
               </div>
             </div>
