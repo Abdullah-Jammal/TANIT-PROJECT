@@ -123,3 +123,26 @@ export const OurPartnersData = [
     img: "/assets/partners/partner4.png",
   },
 ];
+
+export const NavbarLinks = [
+  {
+    li: "Home",
+    link: "/",
+  },
+  {
+    li: "About us",
+    link: "/",
+  },
+  {
+    li: "Services",
+    link: "/",
+  },
+  {
+    li: "Branches",
+    link: "/",
+  },
+  {
+    li: "Jobs",
+    link: "/",
+  },
+];
