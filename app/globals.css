@@ -7,7 +7,9 @@
   --primary-color: #7d4283;
   --text-color: #646a69;
 }
-
+.test {
+  color: #c267cc;
+}
 body {
   padding: 0;
   margin: 0;
@@ -119,7 +121,7 @@ body {
 
 /* Start About Section */
 .myAbout {
-  background-image: url('/assets/aboutLine.png');
+  background-image: url("/assets/aboutLine.png");
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
@@ -129,7 +131,7 @@ body {
 
 /* Start Footer */
 footer {
-  background-image: url('/assets/footerLine.png');
+  background-image: url("/assets/footerLine.png");
   background-position: center bottom -330px;
   background-size: cover;
   background-repeat: no-repeat;
